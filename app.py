@@ -24,10 +24,10 @@ JOBS = [
 }
 ]
 
-app=Flask(__name__,template_folder='Templates')
+app = Flask(__name__,template_folder='Templates')
 @app.route("/")
 def hello_jovian():
-  return render_template('home.html', jobs=JOBS, company_name= "Esmeralda")
+  return render_template('home.html', jobs=JOBS, company_name= "OOstrich Esmeralda")
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
